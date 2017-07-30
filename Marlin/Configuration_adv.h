@@ -1250,7 +1250,7 @@
   #define USER_SCRIPT_DONE "Pen Operation Done"
 
   #define USER_DESC_1 "Lift Pen"
-  #define USER_GCODE_1 "M280 P0 S90"
+  #define USER_GCODE_1 "M280 P0 S50"
 
   #define USER_DESC_2 "Pen Down"
   #define USER_GCODE_2 "M280 P0 S0"
