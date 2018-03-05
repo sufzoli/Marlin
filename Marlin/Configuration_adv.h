@@ -1412,12 +1412,16 @@
 /**
  * User-defined menu items that execute custom GCode
  */
-//#define CUSTOM_USER_MENUS
+#define CUSTOM_USER_MENUS
 #if ENABLED(CUSTOM_USER_MENUS)
   #define USER_SCRIPT_DONE "M117 User Script Done"
   #define USER_SCRIPT_AUDIBLE_FEEDBACK
   //#define USER_SCRIPT_RETURN  // Return to status screen after a script
 
+  #define USER_DESC_1 "Home & Bed Leveling"
+  #define USER_GCODE_1 "G28 X Y \nG29 P1"
+
+/*
   #define USER_DESC_1 "Home & UBL Info"
   #define USER_GCODE_1 "G28\nG29 W"
 
@@ -1432,6 +1436,7 @@
 
   #define USER_DESC_5 "Home & Info"
   #define USER_GCODE_5 "G28\nM503"
+  */
 #endif
 
 /**
