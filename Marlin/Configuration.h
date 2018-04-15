@@ -530,7 +530,7 @@
  *                                      X, Y, Z, E0 [, E1[, E2[, E3[, E4]]]]
  */
 // Source: http://community.robo3d.com/index.php?threads/marlin-1-1-7-release-for-robo-r1-r1-plus-variants.18362/
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 2267, 800 } //--BH Default steps per unit for RoboR1 5/16" Threaded Rods
+// #define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 2267, 800 } //--BH Default steps per unit for RoboR1 5/16" Threaded Rods
 // Recalculated for 32 microsteps:
 #define DEFAULT_AXIS_STEPS_PER_UNIT   { 160, 160, 4535, 1600 }
 

@@ -215,7 +215,8 @@
 
 #if ENABLED(IS_RAMPS_EFB)                      // Hotend, Fan, Bed
   #define FAN_PIN        RAMPS_D9_PIN
-  #define HEATER_BED_PIN RAMPS_D8_PIN
+//  #define HEATER_BED_PIN RAMPS_D8_PIN
+  #define HEATER_BED_PIN 4                      // Hack for external MOSFET
 #elif ENABLED(IS_RAMPS_EEF)                    // Hotend, Hotend, Fan
   #define HEATER_1_PIN   RAMPS_D9_PIN
   #define FAN_PIN        RAMPS_D8_PIN
