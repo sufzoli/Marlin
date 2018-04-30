@@ -532,7 +532,7 @@
 // Source: http://community.robo3d.com/index.php?threads/marlin-1-1-7-release-for-robo-r1-r1-plus-variants.18362/
 // #define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 2267, 800 } //--BH Default steps per unit for RoboR1 5/16" Threaded Rods
 // Recalculated for 32 microsteps:
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 160, 160, 4535, 1600 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 160, 160, 4535, 1421 }
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -787,9 +787,9 @@
 #define Y_BED_SIZE 250
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
-#define X_MIN_POS 0
+#define X_MIN_POS -2
 #define Y_MIN_POS 0
-#define Z_MIN_POS 0
+#define Z_MIN_POS 0.8
 #define X_MAX_POS X_BED_SIZE
 #define Y_MAX_POS Y_BED_SIZE
 #define Z_MAX_POS 200
