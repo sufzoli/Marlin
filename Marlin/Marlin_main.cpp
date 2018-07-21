@@ -10904,6 +10904,7 @@ inline void gcode_M907() {
   bool case_light_on;
 
   void update_case_light() {
+    case_light_brightness = (case_light_brightness > CASE_LIGHT_MAX) ? CASE_LIGHT_MAX : case_light_brightness;
     pinMode(CASE_LIGHT_PIN, OUTPUT); // digitalWrite doesn't set the port mode
     if (case_light_on) {
       if (USEABLE_HARDWARE_PWM(CASE_LIGHT_PIN))
